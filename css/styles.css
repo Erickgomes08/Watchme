@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  background: #1f2024;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(37, 37, 37);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+.mySlides {
+  display: none;
+  height: 400px;
+  box-shadow: 0px 10px 9px 0px #000000;
+  border-radius: 20px;
+}
+
+.slideshow-container img {
+  vertical-align: middle;
+  border-radius: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 93%;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 14px
+  }
+
+  .mySlides {
+    display: none;
+    height: 800px;
+  }
+}
+
+.list::-webkit-scrollbar {
+  width: 1px;
+  height: 9px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+
+
+
+
+.capa {
+  background-image: url(/img/bannerinicial.png);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+
+.apresentacao {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bannerinicial.png);
+  padding: 70px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+}
+
+
+.content {
+  position: relative;
+  padding: 10% 1%;
+  width: 100%;
+}
+
+.content h2 {
+  font-size: 1em;
+}
+
+
+
+img {
+  width: 270px;
+  height: 100%;
+}
+
+
+
+
+.anime-list,
+.movies-list,
+.serie-list,
+.animacao-list {
+  display: flex;
+  overflow-x: scroll;
+  z-index: 1;
+  width: 100%;
+  gap: 10px;
+}
+
+
+
+.coleção {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.coleção:hover .cole:not(:hover) {
+  filter: grayscale(100%);
+}
+
+.cole {
+  box-shadow: 0px 10px 9px 0px #000000;
+  height: 150px;
+  width: 30%;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.cole img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cole img:hover {
+  scale: 1.1;
+  transition: all ease-out 2s;
+}
+
+
+@media screen and (max-width:700px) {
+  .cole {
+    height: 70px;
+    width: 70%;
+  }
+
+  .cole img {
+    width: 100%;
+  }
+}
+
+.asf {
+  box-shadow: 0px 10px 9px 0px #000000;
+}
+
+
+/* Estilos do rodapé */
+footer {
+  background-color: #000;
+  padding: 10px 5%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-family: 'Kenia', sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  background: rgb(28, 29, 29);
+  background: linear-gradient(0deg, rgba(28, 29, 29, 0) 44%, rgba(0, 0, 0, 1) 89%);
+  transition: 0.3s;
+  z-index: 2;
+}
+
+nav.scrolled-down {
+  height: 80px;
+  background: rgb(28, 29, 29);
+  background: linear-gradient(0deg, #1f2024 5%, rgba(0, 0, 0, 1) 99%);
+}
+
+nav.scrolled-down img {
+  scale: 1.25;
+}
+
+nav img {
+  width: 24px;
+  height: 24px;
+  transform-origin: 0% 50%;
+  transition: 0.7s;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.container {
+  margin: 4% 0% 4% 0%;
+  width: 80%;
+}
+
+.view {
+  margin: 4% 0% 4% 0%;
+  width: 80%;
+}
+
+.view {
+  position: relative;
+  top: -50%;
+  bottom: -50%;
+  translate: -50%, -50%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  transition: all 400ms;
+}
+
+.card {
+  flex: 1;
+  height: 100%;
+  transition: all 400ms;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.card>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.card:nth-child(odd) {
+  translate: 0 -10px;
+}
+
+.card:nth-child(even) {
+  translate: 0 20px;
+}
+
+.view:hover .card:not(:hover) {
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  flex: 5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #3e3e3f;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    background-image: url(img/bannerinicial.png);
+    size: 100%;
+  }
+}
