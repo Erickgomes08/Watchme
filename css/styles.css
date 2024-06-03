@@ -464,6 +464,29 @@ main {
   transition: 0.3s;
 }
 
+footer{
+  position:absolute;
+  top: 320%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 170px;
+  width: 70%;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  background-color: #1f2024;
+}
+
+footer p{
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 
 @media (max-width: 999px) {
