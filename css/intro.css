@@ -59,18 +59,17 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
-
-  .signin a{
-      font-size: 1rem;
+    font-size: 1rem;
       text-decoration: none;
       color: #FFFFFF;
   }
 
   .signin:hover{
-      background-color: #0ef55b;
-      transition: ease-in-out 0.3s;
+    background-color: #50f186;
+    color: #000000;
+    transition: ease-in-out 0.4s;
   }
+  
 
 
 
@@ -93,6 +92,9 @@
     }
 
     .fr1 .conteudo {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 1.5em;
       font-size: 2.12rem;
       max-width: 100%;
       flex-wrap: wrap;
@@ -100,25 +102,21 @@
       font-weight: 600;
       font-style: normal;
       color: #ffffff;
+
     }
 
-    .fr1 img {
-      position: absolute;
-      top: 0;
-      left: 10%;
+    .logo__watchme{
+      width: 90%;
     }
 
     .signup{
-      background-color:#3435342f;
-      position:absolute;
-      top: 80%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      background-color: #0ef55b;
+      margin: 1em;
       display: flex;
       flex-direction: column;
       justify-content: center;
       min-height: 75px;
-      width: 60%;
+      width: auto;
       align-items: center;
       border: 2px solid #0ef55b;
       border-radius: 4px;
@@ -131,7 +129,8 @@
     }
 
     .signup:hover{
-      background-color: #0ef55b;
+      background-color: #38f176;
+      color: #000000;
       transition: ease-in-out 0.4s;
     }
 
