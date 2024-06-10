@@ -1,40 +1,7 @@
-.carousel-container {
-  position: relative;
+.swiper-slide img{
   width: 100%;
-  overflow: hidden;
+  height: 140px;
+  border-radius: 2px;
 }
 
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  gap: 5px;
-}
 
-.carousel-item {
-  flex: 0 0 auto;
-}
-
-.carousel-item img{
-  border-radius: 3px;
-  height: 150px;
-}
-
-.prevBtn,
-.nextBtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #3b383865;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prevBtn {
-  left: 0;
-}
-
-.nextBtn {
-  right: 0;
-}
