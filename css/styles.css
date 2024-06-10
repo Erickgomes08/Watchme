@@ -8,6 +8,11 @@
 
 :root{
   --main-font:"Kanit";
+  --main-color:#59f18c;
+  --background:#1f2024;
+  --just-white:#FFFFFF;
+  --just-black:#000000;
+  --trasparent-black:#00000091;
 }
 
 body {
@@ -15,8 +20,8 @@ body {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  background: #1f2024;
-  color: #fff;
+  background: var(--background);
+  color: var(--just-white);
 }
 
 body::-webkit-scrollbar {
@@ -25,11 +30,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(37, 37, 37);
+  background: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
+  background-color: var(--just-white);
   border-radius: 20px;
   border: 1px solid transparent;
 }
@@ -37,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 .mySlides {
   display: none;
   height: 400px;
-  box-shadow: 0px 10px 9px 0px #000000;
+  box-shadow: 0px 10px 9px 0px var(--just-black);
   border-radius: 20px;
 }
 
@@ -63,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: var(--just-white);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -80,12 +85,12 @@ body::-webkit-scrollbar-thumb {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.568);
+  background-color: var(--trasparent-black);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: var(--just-white);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -96,7 +101,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: var(--just-white);
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -109,7 +114,7 @@ body::-webkit-scrollbar-thumb {
   height: 5px;
   width: 5px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: var(--just-white);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -117,7 +122,8 @@ body::-webkit-scrollbar-thumb {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color:var(--main-color);
+
 }
 
 /* Fading animation */
@@ -187,7 +193,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .list::-webkit-scrollbar-thumb {
-  background-color: #eeeeee;
+  background-color: var(--just-white);
   border-radius: 10px;
   border: 1px solid transparent;
 }
@@ -267,7 +273,7 @@ img {
 }
 
 .cole {
-  box-shadow: 0px 10px 9px 0px #000000;
+  box-shadow: 0px 10px 9px 0px var(--just-black);
   height: 150px;
   width: 30%;
   border: transparent;
@@ -298,13 +304,13 @@ img {
 }
 
 .asf {
-  box-shadow: 0px 10px 9px 0px #000000;
+  box-shadow: 0px 10px 9px 0px var(--just-black);
 }
 
 
 /* Estilos do rodapé */
 footer {
-  background-color: #000;
+  background-color: var(--just-black);
   padding: 10px 5%;
   text-align: center;
 }
@@ -315,13 +321,13 @@ footer p {
 }
 
 a {
-  color: #000;
+  color: var(--just-black);
 }
 
 
 
 a {
-  color: #fff;
+  color: var(--just-white);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -362,10 +368,17 @@ nav.scrolled-down img {
 }
 
 nav img {
-  width: 24px;
-  height: 24px;
+  width: 10%;
   transform-origin: 0% 50%;
   transition: 0.7s;
+}
+
+.nav__pesquisa{
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  padding: 0.4em;
+  text-align: center;
 }
 
 .links {
@@ -477,7 +490,7 @@ footer{
   z-index: 1;
   align-items: center;
   text-align: center;
-  background-color: #1f2024;
+  background-color: var(--background);
 }
 
 footer p{
@@ -500,7 +513,7 @@ footer p{
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #3e3e3f;
+    background: var(--background);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
