@@ -23,11 +23,11 @@
     <div class="container flex">
       <img src="/img/logos/logo retro olho.png" alt="">
       <div class="links">
-        <a>Home</a>
-        <a>Movies</a>
-        <a>Series</a>
-        <a>Favorites</a>
-        <input type="search" placeholder="What you wanna watch?" class="nav__pesquisa">
+        <a href="index.html">Home</a>
+        <a href="filme.html">Movies</a>
+        <a href="serie.html">Series</a>
+        <a href="minha lista.html">Favorites</a>
+        <input type="search" placeholder="Search" class="nav__pesquisa">
       </div>
     </div>
   </nav>
@@ -37,19 +37,19 @@
     <br>
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="/img/serie/the-boys-capa.webp" style="width:100%">
+        <img src="/img/slide/Banner_slide_the_boys.jpg" style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="img/galeria/xmen_'97.jpeg" style="width:100%">
+        <img src="img/slide/Banner_slide_stranger_things.jpg" style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="/img/animação/arcane.jpg " style="width:100%">
+        <img src="/img/slide/Banner_slide_invencible.jpg " style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="/img/serie/Stranger things.png " style="width:100%">
+        <img src="/img/slide/Banner_slide_Avengers_ultimate.jpg " style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="/img/filme/fight club.jpg " style="width:100%">
+        <img src="/img/slide/Banner_slide_jojo.jpg " style="width:100%">
       </div>
       <a class="prev" onclick="plusSlides(0)">&#10094;</a>
       <a class="next" onclick="plusSlides(0)">&#10095;</a>
@@ -72,7 +72,7 @@
           <div class="swiper-slide"><img src="/img/BannersAnimeAtualizados/A viagem de chihiro.png" alt=""></div>
           <div class="swiper-slide"><img src="/img/anime/attack_on_titan.webp" alt=""></div>
           <div class="swiper-slide"><img src="/img/anime/baki_hama.webp" alt=""></div>
-          <div class="swiper-slide"><img src="/img/BannersAnimeAtualizados/Bersek.png" alt=""></div>
+          <div class="swiper-slide"><img src="/img/anime/Berseker.jpg" alt=""></div>
           <div class="swiper-slide"><img src="/img/anime/black_clover.png" alt=""></div>
           <div class="swiper-slide"><img src="/img/anime/bleach_thousand_year_blood_war.jpg" alt=""></div>
           <div class="swiper-slide"><img src="/img/anime/boku_no_hero.jpg" alt=""></div>
@@ -339,16 +339,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
-      spaceBetween: 10,
-      slidesPerView: 4.5,
+      spaceBetween: 50,
+      slidesPerView: 3.5,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
-      },
+      }
     });
   </script>
 </body>
